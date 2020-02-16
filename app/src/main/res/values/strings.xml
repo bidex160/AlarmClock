@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlarmClock</string>
+    <string name="id">id</string>
+
+    <string name="c">c</string>
+    <string name="m">m</string>
+
+</resources>

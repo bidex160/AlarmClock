@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/cardv">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/re"
+                >
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:paddingLeft="20dp"
+            android:layout_height="100dp"
+            android:id="@+id/img"
+            android:src="@drawable/ic_alarm_black_24dp"/>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_toRightOf="@id/img"
+           android:layout_centerInParent="true"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="45dp">
+
+
+           <TextView
+               android:id="@+id/houredt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+
+
+               android:text="Hrs" />
+
+           <TextView
+               android:id="@+id/dot"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+
+               android:textStyle="bold"
+               android:layout_toRightOf="@+id/houredt"
+               android:text=":" />
+
+           <TextView
+               android:id="@+id/minedt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+
+               android:textStyle="bold"
+
+               android:layout_toRightOf="@+id/dot"
+               android:text="Mins" />
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

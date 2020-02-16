@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setalarm">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="200dp"
+        android:text="Set Alarm"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/houredit"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="40dp"
+
+
+        android:hint="hrs"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView2"
+        android:text=":"
+        android:textStyle="bold"
+
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/houredit"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:id="@+id/medit"
+        android:hint="mins"
+        android:layout_toRightOf="@+id/dot"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/houredit"
+        android:layout_marginTop="30dp"
+        android:text="Set"
+        android:textStyle="bold"
+        android:background="@drawable/shape"
+        android:id="@+id/stx"
+        android:layout_centerInParent="true"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/f"/>
+
+
+</RelativeLayout>
